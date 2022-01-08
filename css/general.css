@@ -42,11 +42,12 @@ element {
     float: left;
     border-style: solid;
     margin-top: 2%;
-    max-height: 60%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 10%;
 }
 
 
@@ -159,43 +160,19 @@ footer {
         margin-bottom: 50%;
         cursor: pointer;
     }
-    .left-side {
-        float: none;
-        position: relative;
-        width: 50%;
-    }
-    .right-side {
-        width: 75%;
-        float: none;
-    }
 }
 
-@media screen and (max-width: 517px) {
-    .title-product {
-        font-size: 100%;
+@media screen and (max-width: 425px) {
+    .main-section {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 50%;
+        cursor: pointer;
+        grid-gap: 1%;
     }
-    .left-side {
-        font-size: 85%;
-    }
+
 }
 
-@media screen and (max-width: 375px) {
-    .left-side {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #products-main-section {
-        margin-bottom: 75%;
-    }
-    .left-side {
-        float: none;
-        left: 0%;
-        position: relative;
-        width: 100%;
-    }
-}
 
 nav>ul {
     border: 2px solid red;

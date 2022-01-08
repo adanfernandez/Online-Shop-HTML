@@ -16,3 +16,12 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .img-product {
+        height: 50% !important;
+    }
+    .middle {
+        display: none;
+    }
+}
