@@ -1,0 +1,146 @@
+.main-product {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10%;
+    width: 90%;
+}
+
+.img-product {
+    max-width: 50%;
+    margin: 15% 15% 15% 20%;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #177300;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.title {
+    width: 50%;
+    float: right;
+    padding-right: 40%;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+p {
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 150%;
+}
+
+@media screen and (max-width: 768px) {
+    .main-product {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 20%;
+    }
+    .buy {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main-product {
+        margin-bottom: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .img-product {
+        max-width: 60%;
+        margin: 60% 15% 15% 20%;
+    }
+    .main-product {
+        margin-bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .img-product {
+        max-width: 60%;
+        margin: 30% 15% 15% 20%;
+    }
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 20% 50%;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 1%;
+}
+
+#finalPrice {
+    padding: 3%;
+}
+
+.paypal-logo {
+    max-width: 20%;
+}
+
+@media screen and (max-width: 2560px) {
+    .img-product {
+        max-width: 60%;
+        margin: 19% 15% 15% 20%;
+    }
+    .main-product {
+        margin-bottom: 15%;
+    }
+}

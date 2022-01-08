@@ -1,0 +1,217 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.single-product {
+    border-radius: 5%;
+    padding: 20px;
+    font-size: 100%;
+    text-align: center;
+    box-shadow: 3px 3px 5px 0 #f2f2f2;
+    cursor: pointer;
+}
+
+#products-main-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10%;
+}
+
+header {
+    padding: 1%;
+    background-color: #232f3e;
+    color: white;
+    font-size: 140%;
+}
+
+element {
+    background: transparent url(image.png) no-repeat center;
+}
+
+.right-side {
+    float: right;
+    width: 75%;
+}
+
+.left-side {
+    float: left;
+    width: 20%;
+    border-style: solid;
+    margin-top: 2%;
+}
+
+
+.flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .flex-item {
+    text-align: center;
+  }
+
+/*
+https://www.w3schools.com/howto/howto_css_star_rating.asp
+*/
+
+.checked {
+    color: orange;
+}
+
+.main-section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.container {
+    position: relative;
+    width: 75%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.border-red {
+    border-bottom: 10px solid red;
+}
+
+footer {
+    background-color: #232f3e;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.filter {
+    margin-left: 13%;
+    margin-bottom: 10%;
+}
+
+.justify {
+    text-align: justify;
+}
+
+@media screen and (min-width: 1055px) {
+    #products-main-section {
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    #products-main-section {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 50%;
+        cursor: pointer;
+    }
+    .left-side {
+        float: none;
+        position: relative;
+        width: 50%;
+    }
+    .right-side {
+        width: 75%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    .title-product {
+        font-size: 100%;
+    }
+    .left-side {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .left-side {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #products-main-section {
+        margin-bottom: 75%;
+    }
+    .left-side {
+        float: none;
+        left: 0%;
+        position: relative;
+        width: 100%;
+    }
+}
+
+nav>ul {
+    border: 2px solid red;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: flex;
+    color: black;
+    font-weight: 800;
+    padding: 0.4em 0.7em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.pointer {
+    cursor: pointer;
+}

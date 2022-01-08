@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Master's Degree in Web Engineering - UO251162</title>
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleProduct.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="author" content="Adán Fernández" />
+    <meta name="description" content="Online football shop of my favourite teams to practise paypal integration" />
+    <meta name="keywords" content="html5, css, miw, web, adan, uo251162, sandbox, paypal" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="product.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <label> &#9917; Retro shirt</label>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Golf</a></li>
+        </ul>
+    </nav>
+    <h1 class="border-red title">Spain retro shirt</h1>
+    <main class="main-product">
+        <aside class="zoom">
+            <img class="img-product" alt="Spain retro shirt" src="img/spainvintage.jpg">
+        </aside>
+        <aside>
+            <section>
+                <h2>Description</h2>
+                <p class="justify">Jersey of the Spanish national football team with a classic style. It resembles that of the 86 World Cup venued in Mexico, where Spain was defeated by Belgium, highlighting the performance made by Emilio Butragueño, one of the best goal
+                    scorers in the history of Spain together with Telmo Zarra, Dani Güiza, Raúl González or Isidro Lángara. The last named, former Real Oviedo player, is the best striker in Spanish football history according to the International Federation
+                    of Football History & Statistics (IFFHS). You can remember all of them through this unique shirt!
+                </p>
+            </section>
+            <section>
+                <h2>Size</h2>
+                <aside class="custom-select">
+                    <select>
+                          <option value="0">Select size</option>
+                          <option value="1">S</option>
+                          <option value="2">L</option>
+                          <option value="3">XL</option>
+                    </select>
+                </aside>
+            </section>
+            <section>
+                <h2>Amount</h2>
+                <aside class="price">
+                    <input type="number" min="1" id="units" name="units" placeholder="units" />
+                    <label id="finalPrice"></label>
+                </aside>
+            </section>
+            <section>
+                <h2 hidden>Buy now</h2>
+                <form method="POST" action="https://www.sandbox.PayPal.com/cgi-bin/webscr ">
+                    <button class="button">Buy now</button>
+                    <input type="hidden" name="quantity" id="quantity">
+                    <input type="hidden" id="amount" name="amount" value="62.00" />
+                    <input type="hidden" name="business" value="adanfdezsanchez@hotmail.com">
+                    <input type="hidden" name="item_name" value="Spain retro shirt">
+                    <input type="hidden" name="item_number" value="SPAINRETRO">
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="hidden" name="country" value="ES">
+                    <input type="hidden" name="return" value="https://adanfernandez.github.io/Paypal-integration/index.html">
+                    <input type="hidden" name="cancel_return" value="https://adanfernandez.github.io/Paypal-integration/product.html">
+                    <input type="hidden" name="cmd" value="_xclick">
+                </form>
+                <img class="paypal-logo" alt="paypal" src="img/paypal-logo.jpeg">
+            </section>
+        </aside>
+
+    </main>
+
+    <footer>
+        <h1>Retro shirt</h1>
+        <p>The best retro shirt online web</p>
+    </footer>
+
+</body>
+
+</html>

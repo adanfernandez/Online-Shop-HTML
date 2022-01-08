@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Master's Degree in Web Engineering - UO251162</title>
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleIndex.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="author" content="Adán Fernández" />
+    <meta name="description" content="Online football shop of my favourite teams to practise paypal integration" />
+    <meta name="keywords" content="html5, css, miw, web, adan, uo251162, sandbox, paypal" />
+</head>
+
+<body>
+    <header>
+        <label> &#9917; Retro shirt</label>
+    </header>
+
+    <nav>
+        <ul class="flex-container">
+            <li class="flex-item"><a href="#">Football</a></li>
+            <li class="flex-item"><a href="#">Basketball</a></li>
+            <li class="flex-item"><a href="#">Tennis</a></li>
+            <li class="flex-item"><a href="#">Golf</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-picture" id="main-picture">
+        <h2 hidden>Main picture of the application</h2>
+    </section>
+
+    <main class="main-section">
+
+        <aside class="left-side">
+            <section class="filter">
+                <h2>Filter by team</h2>
+                <input type="checkbox" id="realOviedoCheck" name="realOviedoCheck">
+                <label for="realOviedoCheck">Real Oviedo</label><br>
+                <input type="checkbox" id="fcschalkeCheck" name="fcschalkeCheck">
+                <label for="fcschalkeCheck">FC Schalke 04</label><br>
+                <input type="checkbox" id="spainCheck" name="spainCheck">
+                <label for="spainCheck">Spanish national team</label><br>
+            </section>
+            <section class="filter">
+                <h2>Filter by price (0 €-1000 €)</h2>
+                <input id="range" type="range" min="1" max="1000" value="500">
+            </section>
+            <section class="filter">
+                <h2>Filter by brand</h2>
+                <input type="checkbox" id="adidas" name="adidas">
+                <label for="adidas">ADIDAS</label><br>
+                <input type="checkbox" id="nike" name="nike">
+                <label for="nike">NIKE</label><br>
+                <input type="checkbox" id="joma" name="joma">
+                <label for="joma">JOME</label><br>
+            </section>
+            <section class="filter">
+                <h2>Filter by cloth</h2>
+                <input type="checkbox" id="jersey" name="jersey">
+                <label for="jersey">Jersey</label><br>
+                <input type="checkbox" id="scarf" name="scarf">
+                <label for="scarf">Scarf</label><br>
+            </section>
+            <section class="filter">
+                <h2>Filter by valorations</h2>
+                <aside class="pointer">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </aside>
+                <aside class="pointer">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </aside>
+                <aside class="pointer">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </aside>
+                <aside class="pointer">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </aside>
+                <aside class="pointer">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </aside>
+            </section>
+        </aside>
+
+        <aside class="right-side">
+            <h2 class="border-red">Our products</h2>
+            <label><input type="text" placeholder="Search" id="search" /><i id="logoSearch" class="fa fa-search"></i></label>
+            <aside id="products-main-section">
+                <article class="single-product container" id="realoviedo2012">
+                    <a href="product.html">
+                        <h2 class="title-product">Real Oviedo - 2012 jersey</h2>
+                        <img class="img-product" alt="Real Oviedo shirt of 2012-2013 season" src="img/realoviedo2012.jpg">
+                        <aside class="middle">
+                            <p class="single-product text">In 2012, Real Oviedo was saved by its own fans, collecting two million of euros. Real Oviedo was fighting for promoting to the 2nd Spanish football division, but unfortunately was defeated against Eibar. the team from the capital
+                                of Asturias would have to wait until 2015 to complete the promotion. This would be a historic and well-remembered season in Oviedo.</p>
+                        </aside>
+                    </a>
+                </article>
+                <article class="single-product container" id="fcschalkescarf">
+                    <a href="product.html">
+                        <h2 class="title-product">FC Schalke 04 - Scarf</h2>
+                        <img class="img-product" alt="FC Schalke 04 scarf" src="img/fcschalkescarf.jpg">
+                        <aside class="middle">
+                            <p class="single-product text">A very quoted scarf related to FC Schalke. From what experts believe, this is a scarf from the mid-90s</p>
+                        </aside>
+                    </a>
+                </article>
+                <article class="single-product container" id="fcschalkeshirt">
+                    <a href="product.html">
+                        <h2 class="title-product">FC Schalke 04 - 2011 jersey</h2>
+                        <img class="img-product" alt="FC Schalke shirt of 2010-2011 season" src="img/schalkeshirt2011.jpg">
+                        <aside class="middle">
+                            <p class="single-product text">The team achieves its greatest continental success, reaching the semifinals of the European Cup under the guidance of Raúl González Blanco. Players like Huntelaar, Farfán or the world champions Manuel Neuer and Höwedes would
+                                also stand out. Also, FCSchalke would win the German Cup, better knnown as DFB Pokal.</p>
+                        </aside>
+                    </a>
+                </article>
+                <article class="single-product container" id="iniesta">
+                    <a href="product.html">
+                        <h2 class="title-product">Spain - 2010 Jersey (Iniesta)
+                        </h2>
+                        <img class="img-product" alt="Iniesta shirt of FIFA World Cup 2010" src="img/iniesta2010.jpg">
+                        <aside class="middle">
+                            <p class="single-product text">The Spanish national team always had great players, but they never made it past the quarterfinals of the World Cup, except in 1950. In 2010 the team would get its first World Cup title with a goal from Andrés Iniesta agains
+                                Holland.
+                            </p>
+                        </aside>
+                    </a>
+                </article>
+                <article class="single-product container" id="realoviedo2009">
+                    <a href="product.html">
+                        <h2 class="title-product">Real Oviedo - 2009 jersey</h2>
+                        <img class="img-product" alt="Real Oviedo shirt of 2009-2010 season" src="img/realoviedo2009.jpg">
+                        <aside class="middle">
+                            <p class="single-product text">Real Oviedo in 2009 was plunged into a deep institutional depression with the presidency of Dámaso Bances and with Alberto González as the main shareholder. Real Oviedo would play the promotion playoff, being eliminated by
+                                Igor de Souza's Pontevedra, alias Ronaldo Nazario.</p>
+                        </aside>
+                    </a>
+                </article>
+                <article class="single-product container" id="spain2008">
+                    <a href="product.html">
+                        <h2 class="title-product">Spain - 2008 jersey</h2>
+                        <img class="img-product" alt="Spanish national team shirt of EURO 2008" src="img/spain2008.jpg">
+                        <aside class="middle">
+                            <p class="single-product text">Spain had only won one European Championship in 1964 and lost another one in Paris in 1984. From the hand of 'El Sabio de Hortaleza', Spain took off its complexes and won another championship with a goal from Fernando Torres
+                                against Germany.
+                            </p>
+                        </aside>
+                    </a>
+                </article>
+            </aside>
+        </aside>
+    </main>
+
+    <footer>
+        <h1>Retro shirt</h1>
+        <p>The best retro shirt online web</p>
+    </footer>
+
+</body>
+
+</html>
