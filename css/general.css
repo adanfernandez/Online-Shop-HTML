@@ -40,19 +40,23 @@ element {
 
 .left-side {
     float: left;
-    width: 20%;
     border-style: solid;
     margin-top: 2%;
+    max-height: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
-.flex-container {
+.flex-container-horizontal {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   
-  .flex-item {
+  .flex-item-horizontal {
     text-align: center;
   }
 
@@ -65,10 +69,12 @@ https://www.w3schools.com/howto/howto_css_star_rating.asp
 }
 
 .main-section {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 10%;
 }
 
 .container {
@@ -134,7 +140,6 @@ footer {
 
 .filter {
     margin-left: 13%;
-    margin-bottom: 10%;
 }
 
 .justify {
