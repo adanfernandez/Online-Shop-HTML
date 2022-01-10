@@ -24,4 +24,12 @@
     .middle {
         display: none;
     }
+    #products-main-section {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    article {
+        scroll-snap-align: start;
+    }
 }
