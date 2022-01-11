@@ -30,6 +30,10 @@
     .text {
         display: none;
     }
+    .main-section {
+        grid-template-columns: 100%;
+        grid-gap: 3%;
+    }
 }
 
 @media screen and (max-width: 517px) {
@@ -41,5 +45,9 @@
 @media screen and (max-width: 425px) {
     .middle {
         display: none;
+    }
+    
+    .right-side  {
+        margin-bottom: -30%;
     }
 }

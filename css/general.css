@@ -39,7 +39,6 @@ element {
 }
 
 .left-side {
-    float: left;
     border-style: solid;
     margin-top: 2%;
     height: fit-content;
